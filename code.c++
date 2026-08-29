@@ -16,6 +16,6 @@ void loop(){
     valorLido = analogRead(potenciometro);
     angulo = map(valorLido, 0, 1023, 0, 180);
     sevoMotor.write(angulo);
-    
+
     delay(15);
 }
